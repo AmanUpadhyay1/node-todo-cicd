@@ -1,37 +1,71 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
 
-<html>
+    <style type="text/css">
+       #rock{color:red;border:1px solid green; }
+      
+        
 
-    <head>
-        <title>My shaandaar todolist check it  by aman >
-        <style>
-            a {
-                text-decoration: none;
-                color: black;
-            }
-
-        </style>
-    </head>
-
-    <body>
-        <h1>aman upadhyay the man </h1>
-        <ul>
-            <% todolist.forEach(function(todo, index) { %>
-            <li>
-                <a href="/todo/delete/<%= index %>">✘</a>
-                <a href="/todo/<%= index %>">✎</a>
-                <%- todo %>
-            </li>
-            <% }); %>
-        </ul>
-
-        <form action="/todo/add/" method="post">
-            <p>
-                <label for="newtodo">What shoud I do?</label>
-                <input type="text" name="newtodo" id="newtodo" autofocus />
-                <input type="submit" value="Add" />
-            </p>
-        </form>
-    </body>
-
+    </style>
+</head>
+<body> 
+    <form action="get">
+<div><label for="name">Name:</label>
+    <input type="text" name=" name"  id="name">
+</div><br>
+<div><label for="age">AGE:</label>
+<input type="number" name="my number" id="age">
+</div><br>
+<div><label for=" my email">EMAIL:</label>
+<input type="email" id="my email">
+</div><br>
+<div><label for="date">DATE:</label>
+    <input  type="date" name="date" id="date">
+</div>
+<div><br>
+     <label for="my time">TIME:</label>
+    <input type="time" name="time" id="my time">
+</div>
+<br>
+<div>
+    gender:male<input type="radio" name="my gender">female:<input type="radio" name="my gender">other:<input type="radio" name="my gender">
+</div>
+<br>
+<div>
+    are you applicable:<input type="checkbox" name="applicable">
+</div>
+<br>
+<div>
+    write about yourself:
+    <br>
+    <textarea id="rock" name="my text" cols="30" rows="10"></textarea>
+</div>
+<br>
+<div>
+ city: <select list=" mycity">
+    <option value="choose"></option>
+<option value="agra">agra</option>
+<option value="delhi">delhi</option></select>
+</div>
+<br><br>
+<div>
+    select:<input type="submit" vale="submit " class="rock"><input type="reset" value="reset">
+</div>
+</form>
+<progress value =25 max="50"></progress>
+<hr>
+<ul>
+    <li type="square"><data value="12">shop</data></li>
+    <li><data value="13">shampoo</data></li>
+    <li type="circle"><data value="13">detergent</data></li>
+</ul>
+    <hr>
+    
+</body>
 </html>
